@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillswap</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body align="center">
+    <header>
+        <h2 class="logo">SKILLSWAP</h2>
+        <nav class="navigation">
+            <a href="home.html">HOME</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="register.html">REGISTER</a>
+            <button class="btnlogin-popup"><a href="contact.html">CONTACTUS</a></button>
+        </nav>
+    </header>   
+
+
+    
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2 style="color: #00bfff">LOGIN</h2>
+            <br><br>
+            <form action="">
+                <span class="icon"><ion-icon name="person-outline" style="color: rgb(2, 27, 49);"></ion-icon></span>
+                <label for=""  style="color: #5cbfe7">USERNAME  </label>
+                <input type="text">
+                <div class="input-box" style="color: aliceblue;"> 
+                </div>
+                <span class="icon"><ion-icon name="lock-closed"style="color: rgb(2, 27, 49);"></ion-icon></span>
+                <label for=""  style="color: #5cbfe7">PASSWORD</label>
+                <input type="password" required>
+                <div class="input-box" style="color: aliceblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div><br>
+                <div class="remember-forget" style="color: rgb(2, 27, 49);">
+                    <a href="" style="color: rgb(63, 137, 142);">Forget Password?</a><br>
+                    <label for="">
+                        <input type="checkbox">&nbsp;&nbsp;Remember Me
+                    </label>
+                    
+                </div><br>
+                <button type="submit" class="btn">LOGIN</button><br>
+                <div class="login-register"><br>
+                    <p style="color: rgb(2, 27, 49);">Don't have an account?<a href="register.html" class="register-link" style="color: rgb(23, 159, 169);">register</a></p>
+                </div>
+            </form>
+        </div>
+        <script>
+            const loginForm = document.getElementById("login-form");
+            const usernameInput = document.getElementById("username");
+            const passwordInput = document.getElementById("password");
+            const passwordValidation = document.getElementById("password-validation");
+    
+            loginForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const usernameValue = usernameInput.value;
+                const passwordValue = passwordInput.value;
+    
+                const correctUsername = "skfirdous";
+                const correctPassword = "demoncoders";
+    
+                if (usernameValue === correctUsername && passwordValue === correctPassword) {
+                    passwordValidation.innerHTML = "<p id='in'>Login successful!</p>";
+                } else if (usernameValue !== correctUsername) {
+                    passwordValidation.innerHTML = "<p id='in'>You entered the wrong username.</p>";
+                } else {
+                    passwordValidation.innerHTML = "<p id='in'>You entered the wrong password.</p>";
+                }
+            });
+        </script>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

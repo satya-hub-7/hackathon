@@ -1,0 +1,163 @@
+.contactus{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contactPageTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+
+}
+
+.contact{
+    background-color: rgb(173, 235, 243);
+}
+
+.contactDesc {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 300;
+    margin-left: 20px;
+
+
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(222, 140, 140);
+    max-width: 60rem;
+
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 80%;
+    max-width: 35rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1 rem;
+    color: black;
+    border: 2px;
+    border-color: browns;
+    border-radius: 0.3rem;
+    background: rgb(245, 244, 244);
+
+}
+
+.submitBtn {
+    background: rgb(135, 218, 110);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 20px;
+    padding: 0.75rem 3.5rem;
+ 
+    
+}
+
+.pline{
+    margin-left:px;
+
+}
+
+.number{
+    margin-bottom: 20px;
+    margin-left: px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: mintcream;
+}
+   
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #b0e0e6;
+    padding: 10px 20px;
+}
+
+.logo{
+    font-size: 2em;
+    color: #0b0b0b;
+    user-select: none;
+    text-align: left;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #111010;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnlogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #0d0808;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #0a0a0a;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+.contactPageTitle{
+    color: #0cd7f2;
+}
