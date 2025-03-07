@@ -1,0 +1,62 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #171818;
+    text-decoration: none;
+
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+.btn{
+    padding: 5px;
+    background-color: rgb(202, 220, 234);
+    border-radius: 3px;
+}
